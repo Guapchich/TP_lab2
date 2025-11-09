@@ -134,6 +134,7 @@ void Container::search_groups_with_average_marks_more_than_4() {
             cout << "Group with group number " << temp->data->get_number() 
                  << " has an average mark more than 4: " 
                  << temp->data->get_aver_mark() << endl;
+            temp->data->display_group();
             found = true;
         }
         temp = temp->next;

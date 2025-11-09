@@ -9,6 +9,7 @@ void display_menu() {
     cout << "2. Remove a group" << endl;
     cout << "3. Edit group data" << endl;
     cout << "4. Display all groups" << endl;
+    cout << "5. Display students with GPA > 4.0" << endl;
     cout << "0. Exit" << endl;
     cout << "Enter your choice: ";
 }
@@ -66,6 +67,10 @@ int students_program() {
             }
             case 4: {
                 container.display_groups();
+                break;
+            }
+            case 5: { 
+                container.search_groups_with_average_marks_more_than_4();
                 break;
             }
             case 0: {
